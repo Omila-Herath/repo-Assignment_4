@@ -1,0 +1,31 @@
+[run]
+omit =
+  Customer.py
+  Discount.py
+  DiscountType.py
+  FulfilmentException.py
+  FulfilmentType.py
+  InsufficientFundsException.py
+  InsufficientStockException.py
+  Item.py
+  PaymentMethod.py
+  PurchaseLimitExceededException.py
+  RestrictedItemException.py
+  Transaction.py
+  TransactionLine.py
+  megadata.py
+  megamart_base.py
+
+[report]
+exclude_lines =
+  def scan_item
+  def list_items
+  def link_member_account
+  def remove_transaction_line
+  def select_fulfilment_type
+  def select_payment_method
+  def tender_variable_payment
+  def tender_exact_payment
+  def generate_receipt
+  def terminal
+
