@@ -318,7 +318,7 @@ def checkout(transaction: Transaction, items_dict: Dict[str, Tuple[Item, int, Op
       if purchase_limit is not None and new_purchase_amount > purchase_limit:
         raise PurchaseLimitExceededException(f"Purchase limit exceeded for item {item.name}")
       
-      # Update purchased quantity for the item
+      # Update purchased quantity for the ite
       purchased_quantities[item.id] = new_purchase_amount
       
       if not is_item_sufficiently_stocked(item, new_purchase_amount, items_dict):
